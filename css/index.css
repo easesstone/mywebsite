@@ -31,9 +31,9 @@ body {
 
   transition: transform 0.3s;
 }
-.header .category:hover .icon-arrow,
+.category:hover .icon-arrow,
 .header-nav li:hover .icon-arrow {
-  transform: rotateZ(-180deg);
+  transform: rotateZ(-180deg);   /*  ====旋转 div 元素以div 的中心点，即Z 轴，倒转180 度 ====*/
 }
 .icon-text__pink {
   display: inline-block;
@@ -50,29 +50,30 @@ body {
 
 /* ====== header ====== */
 .header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 9999;
-  width: 100%;
-  border-bottom: 1px solid #d4d5d6;
-  background-color: #fff;
+  position: fixed;   /** ====== 位置固定 ========= **/
+  left: 0;           /** ====== 具体左边缘的距离是0 ====== **/     
+  top: 0;            /** ====== 距离上边的距离是0 =====**/
+  z-index: 9999;       /** ==== 如果元素堆叠，那么z-index 越大，其越堆叠在前面 ========= **/
+  width: 100%;         /** ===== 宽度占满整个屏幕的宽度 ==== **/
+  border-bottom: 1px solid #d4d5d6;  /** ===== 下边线的设置 ==== 宽度1px 实线 颜色是 #d4d5d6 **/
+  background-color: #fff;             /** ====背景颜色： 白色====**/
 }
 .header-inner {
-  overflow: hidden;
+  overflow: hidden;     /** 内容如果溢出，则进行裁剪 **/
 }
-.header .logo {
-  float: left;
-  width: 102px;
-  height: 64px;
-  background: url(../images/logo.png) no-repeat left center;
+.header .logo {        
+  float: left;      /** ==== 向左移动 ==== **/
+  width: 68px;     /** ====宽度 ====**/
+  height: 64px;     /** === 高度 ====**/  
+  background: url(../images/logo.png) no-repeat left center;  /**== logo 图片资源名字，不进行平铺， 靠左居中 == **/
 }
-.header .category {
-  position: relative;
-  float: left;
-  width: 68px;
-  height: 26px;
-  margin-top: 18px;
+
+.category {
+  position: relative;  /**== 相对真实的位置 == **/
+  float: left;   /** == 向左移动 == **/
+  width: 68px;   /** == 宽度 ==*/
+  height: 26px;  /** == 高度26 ==**/
+  margin-top: 18px; 
   margin-right: 52px;
 }
 /* 边框 */
@@ -105,7 +106,7 @@ body {
   height: 350px;
   border: 1px solid #000;
   opacity: .12;
-  background-color: #fff;
+  background-color: #f1f2f3;
 }
 .header .category .neck-border {
   display: none;
@@ -114,7 +115,7 @@ body {
   top: 38px;
   width: 68px;
   height: 16px;
-  background-color: #fff;
+  background-color: #f1f2f3;
 }
 .header .category-show .result-border,
 .header .category-show .neck-border,
@@ -126,7 +127,7 @@ body {
   height: 26px;
   line-height: 26px;
   padding-left: 12px;
-  color: rgba(0, 0, 0, .6);
+  color: #f1f2f3;
 }
 .header .category-result {
   display: none;
@@ -135,7 +136,7 @@ body {
   left: 1px;
   width: 486px;
   height: 350px;
-  background-color: #fff;
+  background-color: #f1f2f3;
 }
 .header .search {
   float: left;
@@ -150,7 +151,7 @@ body {
   height: 30px;
   line-height: 30px;
   padding-left: 4px;
-  color: #c5c5c5;
+  color: #f1f2f3;
   box-sizing: border-box;
 }
 .header .search-btn {
