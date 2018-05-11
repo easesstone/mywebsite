@@ -484,10 +484,10 @@ body {
 }
 .main-album .info .title {
   margin: 15px 0 28px;
-  font-weight: 700;
+  font-weight: 600;
 }
 .main-album .info p {
-  line-height: 18px;
+  line-height: 15px;
   color: #888;
 }
 .main-album .info .author {
@@ -523,7 +523,7 @@ body {
   padding-left: 12px;
 }
 .main-recommend .info .title {
-  line-height: 48px;
+  line-height: 40px;
   font-weight: 700;
 }
 .main-recommend .info span {
