@@ -472,7 +472,7 @@ body {
 }
 /* main-album */
 .main-album .main-cont__list .item {
-  height: 328px;
+  height: 338px;
 }
 .main-album .pic,
 .main-album .pic img {
@@ -679,12 +679,12 @@ body {
 }
 /*.waterfall-hover .btn-comment {}*/
 .waterfall-info {
-  height: 67px;
+  height: 80px;
   padding-left: 12px;
   border-bottom: 1px solid #f0f0f0;
 }
 .waterfall-info .title {
-  line-height: 40px;
+  line-height: 20px;
   color: #000;
 }
 .waterfall-info .icon {
@@ -704,8 +704,8 @@ body {
 }
 .collect-info {
   position: relative;
-  height: 60px;
-  padding-left: 44px;
+  height: 70px;
+  padding-left: 48px;
 }
 .collect-info .pic {
   position: relative;
@@ -727,11 +727,12 @@ body {
   color: #888;
 }
 .collect-info p.title {
-  padding-top: 10px;
+  padding-top: 1px;
 }
 .collect-info .to a {
   display: inline;
-  padding-left: 10px;
+  padding-left: 50px;
+  top: 20px;
 }
 /* readMore */
 #readMore {
